@@ -1,4 +1,4 @@
-FROM python:latest AS build
+FROM python:3.10.7 AS build
 RUN apt-get update
 RUN apt-get install wget
 ARG username=Gaurish
