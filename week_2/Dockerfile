@@ -12,7 +12,7 @@ RUN chmod u+w ./home/$username/notebooks/*
 RUN pip3 install -r ./home/$username/notebooks/Requirements.txt
 RUN su $username
 WORKDIR /home/${username}/notebooks/
-#RUN jupyter-lab ./home/$username/notebooks/Interactive3DPlot.ipynb --ip 0.0.0.0 --no-browser --allow-root
+#RUN jupyter-lab ./home/$username/notebooks/Interactive3DPlot.ipynb --ip 0.0.0.0 --no-browser --allow
 #ENTRYPOINT ["jupyter", "lab", "--ip=0.0.0.0", "--allow--root","./home/Gaur/notebooks/Interactive3DPlot.ipynb"]
 # "./home/Gaur/notebooks/Interactive3DPlot.ipynb", "--ip 0.0.0.0  --allow-root"]
 EXPOSE 8888
