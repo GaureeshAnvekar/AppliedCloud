@@ -17,3 +17,4 @@ WORKDIR /home/${username}/notebooks/
 # "./home/Gaur/notebooks/Interactive3DPlot.ipynb", "--ip 0.0.0.0  --allow-root"]
 EXPOSE 8888
 ENTRYPOINT ["jupyter", "lab","./Interactive3DPlot.ipynb", "--ip=0.0.0.0","--allow-root"]
+
