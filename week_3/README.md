@@ -10,7 +10,7 @@
 
  - To run the django app conaitner docker run -it -p8000:8000 -v "$(pwd)/app:/app" mydjango /bin/bash
 
-
+ - Also run -> python manage.py runserver 0.0.0.0:8000 to start the django server
 
 //App docker file\
 FROM python\
