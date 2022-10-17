@@ -2,6 +2,7 @@
 from flask import Flask,render_template,jsonify
 import json
 import random
+import os
 
 app = Flask(__name__)
  
@@ -23,7 +24,7 @@ def randres():
     return jsonify({"Dish: ": key, "Price ($): ": val})
 
 if __name__ == "__main__":
-    app.run('0.0.0.0', port = 5000,debug=True)
+    app.run('0.0.0.0', port = os.environ.get("API_PORT"),debug=True)
 
 
 # Get random dictionary pair in dictionary
